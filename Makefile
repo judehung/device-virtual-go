@@ -1,9 +1,9 @@
 .PHONY: build test unittest lint clean docker
 
 # change the following boolean flag to enable or disable the Full RELRO (RELocation Read Only) for linux ELF (Executable and Linkable Format) binaries
-ENABLE_FULL_RELRO:="true"
+ENABLE_FULL_RELRO:="false"
 # change the following boolean flag to enable or disable PIE for linux binaries which is needed for ASLR (Address Space Layout Randomization) on Linux, the ASLR support on Windows is enabled by default
-ENABLE_PIE:="true"
+ENABLE_PIE:="false"
 
 MICROSERVICES=cmd/device-virtual
 
